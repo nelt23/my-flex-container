@@ -20,4 +20,3 @@ EXPOSE 5000
 
 # Run the Flask app. The heavy model load occurs when app.py starts up.
 CMD ["python3", "app.py"]
-#
