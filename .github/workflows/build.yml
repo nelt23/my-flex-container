@@ -27,7 +27,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: Docker/my-flex-container
+          context: .
           push: true
           tags: nelt23/my-flex-container:latest
 
