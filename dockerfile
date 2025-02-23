@@ -10,7 +10,7 @@ WORKDIR /app
 # Copy requirements and install Python packages
 COPY requirements.txt /app/requirements.txt
 RUN python3 -m pip install --upgrade pip && \
-    python3 -m pip install -r /app/requirements.txt
+    python3 -m pip install --ignore-installed -r /app/requirements.txt
 
 # Copy your application code into the container
 COPY . /app
