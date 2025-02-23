@@ -1,5 +1,5 @@
 # Start from Runpod's FlashBoot-enabled PyTorch image (CUDA 11.8 + Python 3.10 + Ubuntu 20.04)
-FROM runpod/pytorch:2.1.0-py3.10-cuda11.8-0-flash-boot-ubuntu20.04
+FROM runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04
 
 # Let Runpod know we want FlashBoot enabled
 ENV FLASHBOOT_ENABLED=1
