@@ -53,7 +53,7 @@ def decode_image(base64_string):
 # ------------------------------------------------
 print("Loading RFInversionFluxPipeline model...")
 pipe = RFInversionFluxPipeline.from_pretrained(
-    "ostris/Flex.1-alpha",
+    "/app/models/Flex.1-alpha",
     torch_dtype=torch.bfloat16
 )
 pipe.to("cuda")
